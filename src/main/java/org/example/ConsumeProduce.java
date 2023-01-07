@@ -1,13 +1,11 @@
 package org.example;
 
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-import java.util.stream.IntStream;
 
-public class Main {
+public class ConsumeProduce {
 
     static Queue<Integer> dataQueue = new LinkedList();
     static ReadWriteLock readWriteLock = new ReentrantReadWriteLock(true);
